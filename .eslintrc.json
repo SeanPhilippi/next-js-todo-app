@@ -1,3 +1,4 @@
 {
+  "singleQuote": true,
   "extends": "next/core-web-vitals"
 }
