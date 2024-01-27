@@ -8,12 +8,7 @@ const getTodos = () => {
   return prisma.todo.findMany();
 }
 
-const addTodo = async () => {
-  await prisma.todo.create({ data: { title: 'test', complete: false}});
-}
-
 const Home = async () => {
-  await addTodo();
   const todos = await getTodos();
 
   return (
